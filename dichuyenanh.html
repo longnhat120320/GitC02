@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="tom.jpg" style="width: 300px;top: 300px; left: 500px; position: absolute;" alt="" id="x">
+<img src="jerry.jpg" style="width: 300px;top: 300px; left: 500px; position: absolute;" alt="" id="x">
+<button onclick="phai()">phải</button>
+<button onclick="tren()">trên</button>
+<script>
+    let y = document.getElementById('x');
+    function phai() {
+        y.style.left = parseInt(y.style.left) + 1 + 'px';
+    }
+    function tren() {
+        y.style.top = parseInt(y.style.top) - 1 + 'px';
+    }
+   /* setInterval(()=> {
+        phai()
+        if(parseInt(y.style.left) > window.innerWidth) {
+            y.style.left = 0
+        }
+    }, 1);
+    
+    */
+</script>
+</body>
+</html>
